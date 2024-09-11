@@ -6,7 +6,6 @@ namespace Shortly_Client.Controllers;
 
 public class UrlController : Controller
 {
-    // GET
     public IActionResult Index()
     {
         //Fake DB Data

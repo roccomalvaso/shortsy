@@ -1,0 +1,44 @@
+@{
+    ViewData["Tile"] = "Users List";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">ciao@email.com</h5>
+                    <p class="card-text">The users created 1 links and have a total of 10 clicks.</p>
+                    <p>
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Show Links
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Original Links</th>
+                                        <th>Shortener Links</th>
+                                        <th>Number of clicks</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>https://google.com</td>
+                                        <td>lip.ly/udsf</td>
+                                        <td>2394</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-muted">
+                    <small class="text-muted">1 link and 2 click</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
