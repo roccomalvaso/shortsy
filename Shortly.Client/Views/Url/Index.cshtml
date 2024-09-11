@@ -1,3 +1,4 @@
+@model List<Url>;
 @{
     ViewData["Title"] = "All Links";
 }
@@ -23,16 +24,19 @@
         </tr>
         </thead>
         <tbody>
+        @foreach (var url in Model)
+        {
             <tr>
-                <td>1</td>
-                <td>https://google.com</td>
-                <td>test.com</td>
-                <td>1200</td>
-                <td>Admin</td>
+                <td>@url.Id</td>
+                <td>@url.OriginalLink</td>
+                <td>@url.ShortLink</td>
+                <td>@url.NrOfClick</td>
+                <td>@url.UserId</td>
                 <td>
                     <a class="btn btn-outline-danger" asp-controller="Url" asp-action="Remove">Remove</a>
                 </td>
             </tr>
+        }
         </tbody>
     </table>
 </div>
