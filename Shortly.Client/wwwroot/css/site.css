@@ -150,6 +150,12 @@ html {
     cursor: pointer;
   }
 
+  .btn-login {
+    color: white;
+    background-color: #004b55;
+    cursor: pointer;
+  }
+  
   .btn-login:hover, .nav-item:hover {
     color: white;
     background-color: #fe735c !important;
