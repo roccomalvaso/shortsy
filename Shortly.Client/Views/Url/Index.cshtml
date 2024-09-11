@@ -1,10 +1,38 @@
-@model List<Url>
 @{
-    var CurrentDateTime = DateTime.Now;
+    ViewData["Title"] = "All Links";
 }
 
-<h4>Example Data</h4>
-@foreach (var link in Model)
-{
-    <p>Original Link : @link.OriginalLink</p>
-}
+<div class="container">
+    <a class="btn btn-outline-dark"
+       asp-action="Index" 
+       asp-controller="Home">
+        Add New
+    </a>
+</div>
+
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Original Link</th>
+            <th scope="col">Shortened Link</th>
+            <th scope="col">Nr of click</th>
+            <th scope="col">Users</th>
+            <th scope="col">Options</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>https://google.com</td>
+                <td>test.com</td>
+                <td>1200</td>
+                <td>Admin</td>
+                <td>
+                    <a class="btn btn-outline-danger" asp-controller="Url" asp-action="Remove">Remove</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
