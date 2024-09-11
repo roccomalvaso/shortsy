@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Shortly_Client.Data.Models;
+using Shortly_Client.Data.ViewModels;
 
 namespace Shortly_Client.Controllers;
 
@@ -9,9 +10,9 @@ public class UrlController : Controller
     public IActionResult Index()
     {
         //Fake DB Data
-        var allUrls = new List<Url>()
+        var allUrls = new List<GetUrlVM>()
         {
-            new Url()
+            new GetUrlVM()
             {
                 Id = 1,
                 OriginalLink = "https://google.com",
@@ -19,7 +20,7 @@ public class UrlController : Controller
                 NrOfClick = 100,
                 UserId = 12
             },
-            new Url()
+            new GetUrlVM()
             {
                 Id = 2,
                 OriginalLink = "https://google.com",
@@ -27,7 +28,7 @@ public class UrlController : Controller
                 NrOfClick = 12,
                 UserId = 13
             },
-            new Url()
+            new GetUrlVM()
             {
                 Id = 3,
                 OriginalLink = "https://google.com",
