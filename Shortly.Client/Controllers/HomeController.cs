@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Shortly_Client.Data.ViewModels;
 
 namespace Shortly_Client.Controllers;
 
@@ -14,7 +15,17 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View();
+        var newUrl = new PostUrlVM();
+        return View(newUrl);
+    }
+
+    public IActionResult ShortenUrl(PostUrlVM postUrlVm)
+    {
+        if (!ModelState.IsValid)
+        {
+            return View("Index", postUrlVm);
+        }
+        return RedirectToAction("Index");
     }
     
 }
