@@ -1,4 +1,4 @@
-namespace Shortly_Client.Data.Models;
+namespace Shortly.Data.Models;
 
 public class User
 {
