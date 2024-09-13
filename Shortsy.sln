@@ -1,10 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shortly.Redirect", "Shortly.Redirect\Shortly.Redirect.csproj", "{F68B41C9-3DFA-48AA-9C5F-E46E762649CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shortsy.Redirect", "Shortsy.Redirect\Shortsy.Redirect.csproj", "{F68B41C9-3DFA-48AA-9C5F-E46E762649CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shortly.Data", "Shortly.Data\Shortly.Data.csproj", "{4318D1BD-E0BA-4E17-9715-9A6C732B74D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shortsy.Data", "Shortsy.Data\Shortsy.Data.csproj", "{4318D1BD-E0BA-4E17-9715-9A6C732B74D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shortly.Client", "Shortly.Client\Shortly.Client.csproj", "{8CE687F6-3A20-4194-AF3A-131A5AD782F3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shortsy.Client", "Shortsy.Client\Shortsy.Client.csproj", "{8CE687F6-3A20-4194-AF3A-131A5AD782F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
